@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIGHT</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="player-container">
+        <h1 class="player center space-letter">Player</h1>
+        <h2 class="health-bar space-letter">
+          Health: <span class="hp-player"> </span>
+        </h2>
+      </div>
+
+      <div class="bot-container">
+        <h1 class="bot center space-letter">Bot</h1>
+        <h2 class="health-bar space-letter">
+          Health: <span class="hp-bot"> </span>
+        </h2>
+      </div>
+    </div>
+    <!-- buttons -->
+    <div class="btn-container">
+      <button class="attack-btn btn">ATTACK</button>
+      <button class="heal-btn btn">HEAL</button>
+      <button class="give-up-btn btn">GIVE UP</button>
+      <button class="reset-btn btn">RESET</button>
+    </div>
+    <!-- after game screen -->
+    <div class="game-over">
+      <p class="winner after-text hidden">YOU WIN</p>
+      <p class="loser after-text hidden">YOU LOSE</p>
+      <p class="tie after-text hidden">TIE</p>
+
+    </div>
+    <!--log screen-->
+    <div class="log-container"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

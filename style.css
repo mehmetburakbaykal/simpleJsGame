@@ -1,0 +1,207 @@
+body {
+  background-color: #1f1f23;
+  color: #1f1f23;
+}
+
+.container {
+  display: flex;
+  padding: 7%;
+}
+
+.space-letter {
+  letter-spacing: 2.5px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* player settings*/
+.player-container {
+  width: 25%;
+  background-color: rgb(86, 243, 152);
+  position: absolute;
+  border-radius: 100%;
+}
+
+/* bot settings*/
+.bot-container {
+  width: 25%;
+  background-color: rgb(243, 186, 116);
+  position: absolute;
+  right: 7%;
+  border-radius: 100%;
+}
+
+/* buttons */
+.btn-container {
+  width: 200px;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: -120px;
+}
+
+.btn {
+  width: 200px;
+  font-weight: bolder;
+  background-color: rgb(160, 243, 208);
+  color: #1f1f23;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-align: center;
+  display: inline-block;
+  margin: 8px;
+  margin-left: 7%;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.disabled {
+  color: white;
+  background-color: #4d4d53;
+  pointer-events: none;
+}
+
+.btn-container .disabled:hover {
+  background-color: #4d4d53;
+}
+
+.btn-container .attack-btn:hover {
+  background-color: rgb(204, 45, 45);
+  color: white;
+  transition-duration: 0.6s;
+}
+
+.btn-container .heal-btn:hover {
+  background-color: rgb(9, 194, 9);
+  color: white;
+  transition-duration: 0.6s;
+}
+
+.btn-container .give-up-btn:hover {
+  background-color: rgb(47, 0, 255);
+  color: white;
+  transition-duration: 0.6s;
+}
+
+.btn-container .reset-btn:hover {
+  background-color: rgb(243, 100, 33);
+  color: white;
+  transition-duration: 0.6s;
+}
+
+/* health bar */
+.health-bar {
+  text-align: center;
+}
+
+.hp-player,
+.hp-bot {
+  color: rgb(192, 10, 10);
+}
+
+/* after game screen */
+.winner {
+  color: rgb(86, 243, 152);
+}
+
+.loser {
+  color: rgb(243, 186, 116);
+}
+
+.tie {
+  color: rgb(58, 130, 238);
+}
+
+.after-text {
+  text-align: center;
+  justify-content: center;
+  font-size: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* log container */
+.log-container {
+  width: 40%;
+  height: 400px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  /* border: 3px solid rgba(255, 0, 0, 0.603); */
+  border-radius: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#log-inner {
+  margin: 10px;
+  border: 2px solid moccasin;
+  border-radius: 30px;
+}
+
+.log-list,
+.turn-count {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+  letter-spacing: 1.8px;
+  padding: 7px 7px;
+  color: rgb(255, 255, 255);
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1f1f23;
+  box-shadow: inset 0 0 5px;
+  border-radius: 10px;
+  height: 300px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.123);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track:hover {
+  color: rgba(255, 255, 255, 0.247);
+}
+
+.turn-count {
+  color: moccasin;
+}
+
+hr {
+  width: 100%;
+  margin-top: 2px;
+  border: 2px solid moccasin;
+  border-radius: 50%;
+}
+
+.player-dmg-log {
+  color: rgb(86, 243, 152);
+}
+
+.bot-dmg-log {
+  color: rgb(243, 186, 116);
+}
+
+.dmg-log {
+  color: rgb(192, 10, 10);
+}
+
+.heal-log {
+  color: rgb(9, 194, 9);
+}
